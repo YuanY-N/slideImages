@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>轮播图</title>
+        <link rel="stylesheet" href="slideImages.css">
+    </head>
+    <body>
+        <div class="Nyy-3">
+            <!-- data-imgs 是图片的总数 -->
+            <!-- data-active 是当前显示的图片的下标 -->
+            <div class="slide" data-imgs="3" data-active="0">
+                <img id="id-image-0" class="slide-image active" src="slideimages/1.jpg" alt="">
+                <img id="id-image-1" class="slide-image" src="slideimages/2.jpg" alt="">
+                <img id="id-image-2" class="slide-image" src="slideimages/3.jpg" alt="">
+                <button class="slide-button left vertical-center"
+                    data-offset="-1">&lt;</button>
+                <button class="slide-button right vertical-center"
+                    data-offset="1">&gt;</button>
+                <div class="slide-dots">
+                    <div id="id-dot-0" class="slide-dot white"
+                         data-index="0"></div>
+                    <div id="id-dot-1" class="slide-dot"
+                         data-index="1"></div>
+                    <div id="id-dot-2" class="slide-dot"
+                         data-index="2"></div>
+                </div>
+            </div>
+        </div>
+        <script src="Nyy.js"></script>
+        <script src="slideImages.js"></script>
+    </body>
+</html>
